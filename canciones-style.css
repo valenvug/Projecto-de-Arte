@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #4a070f;
+}
+
+.todo {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	padding: 1em 2em;
+
+}
+
+.contenedor__cancion {
+	min-width: 10em;
+	min-height: 15em;
+	border-radius: 1em;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	transition: min-width 1s, min-height 1s;
+	box-shadow: .5em .5em #300309;
+}
+
+.textos {
+	color: #fff;
+	height: 15em;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+
+.contendor {
+	width: 15em;
+	margin: 1em;
+}
+
+.contenedor__cancion-nombre {
+	padding: 1em;
+	display: inline-flex;
+	flex-direction: column;
+	font-size: 1.3em;
+}
+
+.contenedor__cancion-cantante {
+	padding: 1em;
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+.contenedor__cancion:hover {
+	min-width: 16em;
+	min-height: 16em;
+	background-position: left calc(15em - 20px) center;
+	transition: min-height .5s, min-width .5s;
+}
